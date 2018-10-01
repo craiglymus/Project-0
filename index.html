@@ -12,17 +12,19 @@
 		    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 		    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="main.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     </head>
     <body class="FILL">
-      <h2 id="logo"> CRAIG LYMUS </h2>
+      <img src="background.jpg" id="bg" alt="">
 	       <header class="navbar navbar-hidden">
             <a href='#'><i id='hamburger' class="fas fa-bars"></i></a>
               <div class="nav-elements">
                   <ul class="nav-list">
-                  <li><a class="nav-item" href="#">About</a></li>
-                  <li><a class="nav-item" href="#">Portfolio</a></li>
-                  <li><a class="nav-item" href="#">Testimonials</a></li>
-                  <li><a class="nav-item" href="#">Contact</a></li>
+                  <li><h2 id="logo"> CRAIG LYMUS </h2></li>
+                  <li><a class="nav-item" href="#about">About</a></li>
+                  <li><a class="nav-item" href="#portfolio">Portfolio</a></li>
+                  <li><a class="nav-item" href="#testimonials">Testimonials</a></li>
+                  <li><a class="nav-item" href="#form">Contact</a></li>
                   <li><a class="nav-item" href="#"><i class="fas fa-envelope"></i></a></li>
                   <li><a class="nav-item" href="#"><i class="fab fa-github"></i></a></li>
                   <li><a class="nav-item" href="#"><i class="fab fa-linkedin"></i></a></li>
@@ -30,24 +32,24 @@
             </div>
 	       </header>
 	 <div class="me">
-		  <a href="https://placeholder.com"><img src="https://via.placeholder.com/600x500"></a>
+		  <a><img src="me.jpg" alt="me" width="600" height="450" style="transform:rotate(90deg);"></a>
 	 </div>
-	 <div class="about">
+	 <div class="about" id="about">
       <h2> ABOUT ME </h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores odio veniam, nesciunt aut veritatis voluptatibus soluta dolorem, hic, sint placeat architecto eaque rerum facere. Impedit nam, commodi ut quae assumenda! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe assumenda sequi praesentium ipsam dolorum obcaecati, eligendi aspernatur velit architecto cupiditate minus nemo, explicabo, eveniet unde quibusdam nesciunt esse ipsum repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur culpa animi atque nam rem quia rerum ut deleniti, odit eum? Quaerat sint nihil nulla eius quisquam, veniam pariatur accusantium eum.</p>
    </div>
-   <div class="portfolio">
+   <div class="portfolio" id="portfolio">
     	<h2> PORTFOLIO </h2>
     	 <a href="https://placeholder.com"><img src="https://via.placeholder.com/700x250"></a>
     		<!-- <carousel w/ portfolio> -->
 	 </div>
-	 <div class="testimonials">
+	 <div class="testimonials" id="testimonials">
 		  <h2> TESTIMONIALS </h2>
 		    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum voluptatem ut impedit. Possimus veritatis nostrum deleniti dolore reiciendis, assumenda eos excepturi quos enim voluptatum nobis ipsum provident sapiente nisi, autem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae impedit ea sit rerum minus neque incidunt, aliquam quaerat eius id fugiat eum nobis autem possimus, sapiente aperiam, enim unde harum!
 	 </div>
 	 <!-- <div class="contact"> -->
    <section id="contact">
-     <div class="container">
+     <div class="container" id="form">
        <form name="htmlform" method="post" action="toyousender.php">
           <input type="text" name="first_name" placeholder="NAME" required>
           <input  type="email" name="email" placeholder="MAIL" required>

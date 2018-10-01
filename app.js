@@ -5,7 +5,7 @@ var hamburger = document.getElementById('hamburger')
 var navbarElements = document.querySelector('.nav-list')
 // Menu Click Event Listener
 
-menuButton.addEventListener('click', handleMenuClick);
+hamburger.addEventListener('click', handleMenuClick);
 
 // Handle Menu Click 
 
@@ -15,12 +15,12 @@ function handleMenuClick () {
 	
 	if (navbar.classList.contains('navbar-hidden')) {
 		navbar.classList.toggle('navbar-hidden');
-		menuButton.style.color = '#fff';
+		menuButton.style.color = 'white';
 		menuButton.classList.remove('fa-bars'); 
 		menuButton.classList.add('fa-times');
 	} else {
 		navbar.classList.toggle('navbar-hidden');
-		menuButton.style.color = '#000'
+		menuButton.style.color = 'white'
 		menuButton.classList.remove('fa-times')
 		menuButton.classList.add('fa-bars');
 	}
@@ -34,3 +34,20 @@ function showHiddenNav() {
 	console.log('hellooo')
 	navbarElements.style.toggle('navbar')
 }
+
+// Smooth Scrolling 
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
