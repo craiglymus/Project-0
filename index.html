@@ -15,7 +15,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     </head>
     <body class="FILL">
-      <img src="background.jpg" id="bg" alt="">
+        <a href="https://placeholder.com"><img src="https://via.placeholder.com/700x250"></a>
+      <!-- <img src="background.jpg" id="bg" alt=""> -->
 	       <header class="navbar navbar-hidden">
             <a href='#'><i id='hamburger' class="fas fa-bars"></i></a>
               <div class="nav-elements">
@@ -32,7 +33,7 @@
             </div>
 	       </header>
 	 <div class="me">
-		  <a><img src="me.jpg" alt="me" width="600" height="450" style="transform:rotate(90deg);"></a>
+		  <!-- <a><img src="me.jpg" alt="me" width="600" height="450" style="transform:rotate(90deg);"></a> -->
 	 </div>
 	 <div class="about" id="about">
       <h2> ABOUT ME </h2>
@@ -40,6 +41,39 @@
    </div>
    <div class="portfolio" id="portfolio">
     	<h2> PORTFOLIO </h2>
+      <div class="carousel">
+    <div class="carousel-inner">
+        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel-item">
+            <img src="c3.png">
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+            <img src="c1.png">
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+            <img src="c2.png">
+        </div>
+        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+        <label for="carousel-2" class="carousel-control next control-1">›</label>
+        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+        <label for="carousel-3" class="carousel-control next control-2">›</label>
+        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+        <label for="carousel-1" class="carousel-control next control-3">›</label>
+        <ol class="carousel-indicators">
+            <li>
+                <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-3" class="carousel-bullet">•</label>
+            </li>
+        </ol>
+    </div>
+</div>
     	 <a href="https://placeholder.com"><img src="https://via.placeholder.com/700x250"></a>
     		<!-- <carousel w/ portfolio> -->
 	 </div>
@@ -58,29 +92,7 @@
        </form>
      </div>
    </section>
-      <!-- <h2> CONTACT ME </h2>
-        <form action="index.html" method="get">
-         <div class="form">
-        <section>
-          <div class="form-group">
-            <input type="text" class="form-control input-lg" name="name" placeholder="Name" />
-          </div>
-          <div class="form-group">
-            <input type="email" class="form-control input-lg" name="email" placeholder="Email Address" />
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control input-lg" name="subject" placeholder="Subject" />
-          </div>
-        </section>
-        <section>
-          <div class="form-group">
-            <textarea name="message" rows="6" class="form-control input-lg" placeholder="Message"></textarea>
-          </div>
-        </section>
-      </div>
-        <input class="form-control input-lg" type="submit" value="Submit" />
-    </form>
-   </div> -->
+      
    <script type="text/javascript" src="app.js"></script>
  </body>
 </html>
